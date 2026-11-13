@@ -1,41 +1,41 @@
 module.exports = ({ theme }) => ({
   DEFAULT: {
     css: {
-      '--tw-prose-body': theme('colors.zinc.700'),
-      '--tw-prose-headings': theme('colors.zinc.900'),
-      '--tw-prose-links': theme('colors.emerald.500'),
-      '--tw-prose-links-hover': theme('colors.emerald.600'),
-      '--tw-prose-links-underline': theme('colors.emerald.500 / 0.3'),
-      '--tw-prose-bold': theme('colors.zinc.900'),
-      '--tw-prose-counters': theme('colors.zinc.500'),
-      '--tw-prose-bullets': theme('colors.zinc.300'),
-      '--tw-prose-hr': theme('colors.zinc.900 / 0.05'),
-      '--tw-prose-quotes': theme('colors.zinc.900'),
-      '--tw-prose-quote-borders': theme('colors.zinc.200'),
-      '--tw-prose-captions': theme('colors.zinc.500'),
-      '--tw-prose-code': theme('colors.zinc.900'),
-      '--tw-prose-code-bg': theme('colors.zinc.100'),
-      '--tw-prose-code-ring': theme('colors.zinc.300'),
-      '--tw-prose-th-borders': theme('colors.zinc.300'),
-      '--tw-prose-td-borders': theme('colors.zinc.200'),
+      '--tw-prose-body': '#94A3B8',
+      '--tw-prose-headings': '#F1F5F9',
+      '--tw-prose-links': '#00D4FF',
+      '--tw-prose-links-hover': '#5CACFF',
+      '--tw-prose-links-underline': 'rgba(0, 212, 255, 0.3)',
+      '--tw-prose-bold': '#F1F5F9',
+      '--tw-prose-counters': '#00D4FF',
+      '--tw-prose-bullets': '#00D4FF',
+      '--tw-prose-hr': 'rgba(0, 212, 255, 0.2)',
+      '--tw-prose-quotes': '#CBD5E1',
+      '--tw-prose-quote-borders': '#00D4FF',
+      '--tw-prose-captions': '#64748B',
+      '--tw-prose-code': '#00D4FF',
+      '--tw-prose-code-bg': 'rgba(0, 212, 255, 0.1)',
+      '--tw-prose-code-ring': 'rgba(0, 212, 255, 0.2)',
+      '--tw-prose-th-borders': 'rgba(0, 212, 255, 0.2)',
+      '--tw-prose-td-borders': 'rgba(0, 212, 255, 0.1)',
 
-      '--tw-prose-invert-body': theme('colors.zinc.400'),
-      '--tw-prose-invert-headings': theme('colors.white'),
-      '--tw-prose-invert-links': theme('colors.emerald.400'),
-      '--tw-prose-invert-links-hover': theme('colors.emerald.500'),
-      '--tw-prose-invert-links-underline': theme('colors.emerald.500 / 0.3'),
-      '--tw-prose-invert-bold': theme('colors.white'),
-      '--tw-prose-invert-counters': theme('colors.zinc.400'),
-      '--tw-prose-invert-bullets': theme('colors.zinc.600'),
-      '--tw-prose-invert-hr': theme('colors.white / 0.05'),
-      '--tw-prose-invert-quotes': theme('colors.zinc.100'),
-      '--tw-prose-invert-quote-borders': theme('colors.zinc.700'),
-      '--tw-prose-invert-captions': theme('colors.zinc.400'),
-      '--tw-prose-invert-code': theme('colors.white'),
-      '--tw-prose-invert-code-bg': theme('colors.zinc.700 / 0.15'),
-      '--tw-prose-invert-code-ring': theme('colors.white / 0.1'),
-      '--tw-prose-invert-th-borders': theme('colors.zinc.600'),
-      '--tw-prose-invert-td-borders': theme('colors.zinc.700'),
+      '--tw-prose-invert-body': '#94A3B8',
+      '--tw-prose-invert-headings': '#F1F5F9',
+      '--tw-prose-invert-links': '#00D4FF',
+      '--tw-prose-invert-links-hover': '#5CACFF',
+      '--tw-prose-invert-links-underline': 'rgba(0, 212, 255, 0.3)',
+      '--tw-prose-invert-bold': '#F1F5F9',
+      '--tw-prose-invert-counters': '#00D4FF',
+      '--tw-prose-invert-bullets': '#00D4FF',
+      '--tw-prose-invert-hr': 'rgba(0, 212, 255, 0.2)',
+      '--tw-prose-invert-quotes': '#CBD5E1',
+      '--tw-prose-invert-quote-borders': '#00D4FF',
+      '--tw-prose-invert-captions': '#64748B',
+      '--tw-prose-invert-code': '#00D4FF',
+      '--tw-prose-invert-code-bg': 'rgba(0, 212, 255, 0.1)',
+      '--tw-prose-invert-code-ring': 'rgba(0, 212, 255, 0.2)',
+      '--tw-prose-invert-th-borders': 'rgba(0, 212, 255, 0.2)',
+      '--tw-prose-invert-td-borders': 'rgba(0, 212, 255, 0.1)',
 
       // Base
       'color': 'var(--tw-prose-body)',
@@ -71,33 +71,15 @@ module.exports = ({ theme }) => ({
         marginBottom: theme('spacing.5'),
         paddingLeft: '1.625rem',
       },
-      'ol[type="A"]': {
-        listStyleType: 'upper-alpha',
-      },
-      'ol[type="a"]': {
-        listStyleType: 'lower-alpha',
-      },
-      'ol[type="A" s]': {
-        listStyleType: 'upper-alpha',
-      },
-      'ol[type="a" s]': {
-        listStyleType: 'lower-alpha',
-      },
-      'ol[type="I"]': {
-        listStyleType: 'upper-roman',
-      },
-      'ol[type="i"]': {
-        listStyleType: 'lower-roman',
-      },
-      'ol[type="I" s]': {
-        listStyleType: 'upper-roman',
-      },
-      'ol[type="i" s]': {
-        listStyleType: 'lower-roman',
-      },
-      'ol[type="1"]': {
-        listStyleType: 'decimal',
-      },
+      'ol[type="A"]': { listStyleType: 'upper-alpha' },
+      'ol[type="a"]': { listStyleType: 'lower-alpha' },
+      'ol[type="A" s]': { listStyleType: 'upper-alpha' },
+      'ol[type="a" s]': { listStyleType: 'lower-alpha' },
+      'ol[type="I"]': { listStyleType: 'upper-roman' },
+      'ol[type="i"]': { listStyleType: 'lower-roman' },
+      'ol[type="I" s]': { listStyleType: 'upper-roman' },
+      'ol[type="i" s]': { listStyleType: 'lower-roman' },
+      'ol[type="1"]': { listStyleType: 'decimal' },
       'ul': {
         listStyleType: 'disc',
         marginTop: theme('spacing.5'),
@@ -108,32 +90,20 @@ module.exports = ({ theme }) => ({
         marginTop: theme('spacing.2'),
         marginBottom: theme('spacing.2'),
       },
-      ':is(ol, ul) > li': {
-        paddingLeft: theme('spacing[1.5]'),
-      },
+      ':is(ol, ul) > li': { paddingLeft: theme('spacing[1.5]') },
       'ol > li::marker': {
-        fontWeight: '400',
+        fontWeight: '500',
         color: 'var(--tw-prose-counters)',
       },
-      'ul > li::marker': {
-        color: 'var(--tw-prose-bullets)',
-      },
+      'ul > li::marker': { color: 'var(--tw-prose-bullets)' },
       '> ul > li p': {
         marginTop: theme('spacing.3'),
         marginBottom: theme('spacing.3'),
       },
-      '> ul > li > *:first-child': {
-        marginTop: theme('spacing.5'),
-      },
-      '> ul > li > *:last-child': {
-        marginBottom: theme('spacing.5'),
-      },
-      '> ol > li > *:first-child': {
-        marginTop: theme('spacing.5'),
-      },
-      '> ol > li > *:last-child': {
-        marginBottom: theme('spacing.5'),
-      },
+      '> ul > li > *:first-child': { marginTop: theme('spacing.5') },
+      '> ul > li > *:last-child': { marginBottom: theme('spacing.5') },
+      '> ol > li > *:first-child': { marginTop: theme('spacing.5') },
+      '> ol > li > *:last-child': { marginBottom: theme('spacing.5') },
       'ul ul, ul ol, ol ul, ol ol': {
         marginTop: theme('spacing.3'),
         marginBottom: theme('spacing.3'),
@@ -160,22 +130,21 @@ module.exports = ({ theme }) => ({
 
       // Quotes
       'blockquote': {
-        fontWeight: '500',
-        fontStyle: 'italic',
+        fontWeight: '400',
+        fontStyle: 'normal',
         color: 'var(--tw-prose-quotes)',
-        borderLeftWidth: '0.25rem',
+        borderLeftWidth: '3px',
         borderLeftColor: 'var(--tw-prose-quote-borders)',
-        quotes: '"\\201C""\\201D""\\2018""\\2019"',
+        background: 'rgba(0, 212, 255, 0.05)',
+        borderRadius: '0 6px 6px 0',
         marginTop: theme('spacing.8'),
         marginBottom: theme('spacing.8'),
         paddingLeft: theme('spacing.5'),
+        paddingTop: theme('spacing.3'),
+        paddingBottom: theme('spacing.3'),
       },
-      'blockquote p:first-of-type::before': {
-        content: 'open-quote',
-      },
-      'blockquote p:last-of-type::after': {
-        content: 'close-quote',
-      },
+      'blockquote p:first-of-type::before': { content: 'none' },
+      'blockquote p:last-of-type::after': { content: 'none' },
 
       // Headings
       'h1': {
@@ -184,6 +153,8 @@ module.exports = ({ theme }) => ({
         fontSize: theme('fontSize.2xl')[0],
         ...theme('fontSize.2xl')[1],
         marginBottom: theme('spacing.2'),
+        borderBottom: '1px solid rgba(0, 212, 255, 0.2)',
+        paddingBottom: '0.3em',
       },
       'h2': {
         color: 'var(--tw-prose-headings)',
@@ -192,6 +163,8 @@ module.exports = ({ theme }) => ({
         ...theme('fontSize.lg')[1],
         marginTop: theme('spacing.16'),
         marginBottom: theme('spacing.2'),
+        borderBottom: '1px solid rgba(0, 212, 255, 0.15)',
+        paddingBottom: '0.25em',
       },
       'h3': {
         color: 'var(--tw-prose-headings)',
@@ -206,11 +179,10 @@ module.exports = ({ theme }) => ({
       'img, video, figure': {
         marginTop: theme('spacing.8'),
         marginBottom: theme('spacing.8'),
+        borderRadius: '8px',
+        border: '1px solid rgba(0, 212, 255, 0.15)',
       },
-      'figure > *': {
-        marginTop: '0',
-        marginBottom: '0',
-      },
+      'figure > *': { marginTop: '0', marginBottom: '0' },
       'figcaption': {
         color: 'var(--tw-prose-captions)',
         fontSize: theme('fontSize.xs')[0],
@@ -226,92 +198,80 @@ module.exports = ({ theme }) => ({
         marginTop: theme('spacing.8'),
         marginBottom: theme('spacing.8'),
         lineHeight: theme('lineHeight.6'),
+        borderRadius: '8px',
+        overflow: 'hidden',
       },
       'thead': {
         borderBottomWidth: '1px',
         borderBottomColor: 'var(--tw-prose-th-borders)',
+        background: 'rgba(0, 123, 255, 0.1)',
       },
       'thead th': {
         color: 'var(--tw-prose-headings)',
         fontWeight: '600',
         verticalAlign: 'bottom',
-        paddingRight: theme('spacing.2'),
-        paddingBottom: theme('spacing.2'),
-        paddingLeft: theme('spacing.2'),
+        paddingRight: theme('spacing.4'),
+        paddingBottom: theme('spacing.3'),
+        paddingLeft: theme('spacing.4'),
+        paddingTop: theme('spacing.3'),
       },
-      'thead th:first-child': {
-        paddingLeft: '0',
-      },
-      'thead th:last-child': {
-        paddingRight: '0',
-      },
+      'thead th:first-child': { paddingLeft: '1em' },
+      'thead th:last-child': { paddingRight: '1em' },
       'tbody tr': {
         borderBottomWidth: '1px',
         borderBottomColor: 'var(--tw-prose-td-borders)',
       },
-      'tbody tr:last-child': {
-        borderBottomWidth: '0',
-      },
+      'tbody tr:last-child': { borderBottomWidth: '0' },
+      'tbody tr:nth-child(even)': { background: 'rgba(0, 212, 255, 0.02)' },
       'tbody td': {
         verticalAlign: 'baseline',
+        padding: '0.6em 1em',
       },
       'tfoot': {
         borderTopWidth: '1px',
         borderTopColor: 'var(--tw-prose-th-borders)',
       },
-      'tfoot td': {
-        verticalAlign: 'top',
-      },
+      'tfoot td': { verticalAlign: 'top' },
       ':is(tbody, tfoot) td': {
         paddingTop: theme('spacing.2'),
         paddingRight: theme('spacing.2'),
         paddingBottom: theme('spacing.2'),
         paddingLeft: theme('spacing.2'),
       },
-      ':is(tbody, tfoot) td:first-child': {
-        paddingLeft: '0',
-      },
-      ':is(tbody, tfoot) td:last-child': {
-        paddingRight: '0',
-      },
+      ':is(tbody, tfoot) td:first-child': { paddingLeft: '1em' },
+      ':is(tbody, tfoot) td:last-child': { paddingRight: '1em' },
 
       // Inline elements
       'a': {
         'color': 'var(--tw-prose-links)',
-        'textDecoration': 'underline transparent',
+        'textDecoration': 'none',
         'fontWeight': '500',
-        'transitionProperty': 'color, text-decoration-color',
+        'transitionProperty': 'color',
         'transitionDuration': theme('transitionDuration.DEFAULT'),
         'transitionTimingFunction': theme('transitionTimingFunction.DEFAULT'),
         '&:hover': {
           color: 'var(--tw-prose-links-hover)',
-          textDecorationColor: 'var(--tw-prose-links-underline)',
+          textDecoration: 'underline',
         },
       },
-      ':is(h1, h2, h3) a': {
-        fontWeight: 'inherit',
-      },
+      ':is(h1, h2, h3) a': { fontWeight: 'inherit' },
       'strong': {
         color: 'var(--tw-prose-bold)',
         fontWeight: '600',
       },
-      ':is(a, blockquote, thead th) strong': {
-        color: 'inherit',
-      },
+      ':is(a, blockquote, thead th) strong': { color: 'inherit' },
       'code': {
         color: 'var(--tw-prose-code)',
-        borderRadius: theme('borderRadius.lg'),
-        paddingTop: theme('padding.1'),
-        paddingRight: theme('padding[1.5]'),
-        paddingBottom: theme('padding.1'),
-        paddingLeft: theme('padding[1.5]'),
-        boxShadow: 'inset 0 0 0 1px var(--tw-prose-code-ring)',
+        borderRadius: '4px',
+        paddingTop: '2px',
+        paddingRight: '6px',
+        paddingBottom: '2px',
+        paddingLeft: '6px',
         backgroundColor: 'var(--tw-prose-code-bg)',
-        fontSize: theme('fontSize.2xs'),
+        fontSize: '0.85em',
+        fontFamily: "'SF Mono', 'Fira Code', 'Consolas', monospace",
       },
-      ':is(a, h1, h2, h3, blockquote, thead th) code': {
-        color: 'inherit',
-      },
+      ':is(a, h1, h2, h3, blockquote, thead th) code': { color: 'inherit' },
       'h2 code': {
         fontSize: theme('fontSize.base')[0],
         fontWeight: 'inherit',
@@ -322,15 +282,9 @@ module.exports = ({ theme }) => ({
       },
 
       // Overrides
-      ':is(h1, h2, h3) + *': {
-        marginTop: '0',
-      },
-      '> :first-child': {
-        marginTop: '0 !important',
-      },
-      '> :last-child': {
-        marginBottom: '0 !important',
-      },
+      ':is(h1, h2, h3) + *': { marginTop: '0' },
+      '> :first-child': { marginTop: '0 !important' },
+      '> :last-child': { marginBottom: '0 !important' },
     },
   },
   invert: {
