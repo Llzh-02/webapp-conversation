@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next'
 import { getLocaleOnServer } from '@/i18n/server'
 
 import './styles/globals.css'
@@ -17,6 +18,7 @@ const LocaleLayout = async ({
             {children}
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   )
