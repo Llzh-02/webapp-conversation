@@ -1,23 +1,27 @@
-import type { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { getLocaleOnServer } from '@/i18n/server'
 
-export const metadata: Metadata = {
-  title: "Dify",
-  description: "Dify - AI 对话助手",
-};
+import './styles/globals.css'
+import './styles/markdown.scss'
 
-export default function RootLayout({
+const LocaleLayout = async ({
   children,
 }: {
-  children: React.ReactNode;
-}) {
+  children: React.ReactNode
+}) => {
+  const locale = await getLocaleOnServer()
   return (
-    <html lang="zh-CN">
-      <body>
-        {children}
+    <html lang={locale ?? 'en'} className="h-full dark">
+      <body className="h-full tech-bg">
+        <div className="overflow-x-auto">
+          <div className="w-screen h-screen min-w-[300px]">
+            {children}
+          </div>
+        </div>
         <speedinsights ></speedinsights>
       </body>
     </html>
-  );
+  )
 }
+
+export default LocaleLayout
